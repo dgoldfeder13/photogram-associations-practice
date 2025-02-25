@@ -26,7 +26,7 @@ class User < ApplicationRecord
   # User#own_photos: returns rows from the photos table  associated to this user by the owner_id column
   has_many(:own_photos, class_name: "Photo", foreign_key: "owner_id")
   # User#likes: returns rows from the likes table associated to this user by the fan_id column
-
+  
   # User#sent_follow_requests: returns rows from the follow requests table associated to this user by the sender_id column
 
   # User#received_follow_requests: returns rows from the follow requests table associated to this user by the recipient_id column
